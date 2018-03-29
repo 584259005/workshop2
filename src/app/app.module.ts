@@ -1,3 +1,5 @@
+import { Ch1Page } from './../pages/ch1/ch1';
+import { LessonPage } from './../pages/lesson/lesson';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
@@ -8,12 +10,15 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 @NgModule({
   declarations: [
     MyApp,
+    Ch1Page,
+    LessonPage,
     AboutPage,
     ContactPage,
     HomePage,
@@ -26,6 +31,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    Ch1Page,
+    LessonPage,
     AboutPage,
     ContactPage,
     HomePage,
